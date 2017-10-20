@@ -12,14 +12,17 @@ $(document).ready(function(){
       $("input#name").addClass("is-invalid");
       $(".invalid-feedback").show();
     } else if (q1 === "css" && q5 === "css" || q1 === "css" && q2 === "css" || q5 === "css" && q2 === "css" || q5 === "css" && q3 === "css"){
-      $("#cssimage").fadeIn(2000);
+      $("#cssimage, #adviceCss").fadeIn(2000);
       $("#javaimage, #csharpimage, #quiz").hide();
+      $(".name").text(name);
     } else if (q1 === "java" && q5 === "java" || q1 === "java" && q3 === "java" || q5 === "java" && q2 === "java" || q5 === "java" && q3 === "java"){
-      $("#javaimage").fadeIn(2000);
+      $("#javaimage, #adviceJava").fadeIn(2000);
       $("#cssimage, #csharpimage, #quiz").hide();
+      $(".name").text(name);
     } else {
-      $("#csharpimage").fadeIn(2000);
+      $("#csharpimage, #adviceCsharp").fadeIn(2000);
       $("#javaimage, #cssimage, #quiz").hide();
+      $(".name").text(name);
     }
 
 
@@ -27,6 +30,6 @@ $(document).ready(function(){
   $("#home").click(function(event){
     event.preventDefault();
     $("#quiz").fadeIn(1000);
-    $("#javaimage, #csharpimage, #cssimage").hide();
+    $("#javaimage, #csharpimage, #cssimage, #adviceCss, #adviceJava, #adviceCsharp").hide();
   });
 });

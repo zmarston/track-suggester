@@ -74,3 +74,16 @@ h2:hover {
 .invalid-feedback {
   margin-left: 135px;
 }
+#adviceCss {
+  display: none;
+}
+#adviceJava {
+  display: none;
+}
+#adviceCsharp {
+  display: none;
+}
+h4 {
+  text-align: center;
+  margin: 20px;
+}
