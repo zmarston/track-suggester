@@ -30,6 +30,7 @@ $(document).ready(function(){
   $("#home").click(function(event){
     event.preventDefault();
     $("#quiz").fadeIn(1000);
-    $("#javaimage, #csharpimage, #cssimage, #adviceCss, #adviceJava, #adviceCsharp").hide();
+    $("#javaimage, #csharpimage, #cssimage, #adviceCss, #adviceJava, #adviceCsharp, .invalid-feedback").hide();
+    $("input#name").removeClass("is-invalid");
   });
 });
