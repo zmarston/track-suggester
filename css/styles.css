@@ -1,3 +1,35 @@
+
+body{
+  background-color: #009999;
+}
 img {
   display: none;
+}
+.form-control {
+  width: 630px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+  text-align: center;
+}
+h5 {
+  margin-left: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+form {
+  border: solid;
+  border-color: black;
+  border-radius: 100%;
+  padding: 50px;
+  background-color: #006666;
+  margin: 50px;
 }
