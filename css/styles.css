@@ -61,3 +61,10 @@ h2:hover {
   border-style: solid;
   border-width: 2px;
 }
+.col-md-3:hover {
+  border-bottom-width: 4px;
+  border-top-width: 4px;
+  border-right-width: 4px;
+  border-left-width: 4px;
+  margin-top: -4px;
+}

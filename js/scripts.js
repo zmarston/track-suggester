@@ -8,13 +8,13 @@ $(document).ready(function(){
     var q5 = $("#q5").val();
 
     if (q1 === "css" && q5 === "css" || q1 === "css" && q2 === "css" || q5 === "css" && q2 === "css" || q5 === "css" && q3 === "css"){
-      $("#cssimage, #home").show();
+      $("#cssimage").show();
       $("#javaimage, #csharpimage, #quiz").hide();
     } else if (q1 === "java" && q5 === "java" || q1 === "java" && q3 === "java" || q5 === "java" && q2 === "java" || q5 === "java" && q3 === "java"){
-      $("#javaimage, #home").show();
+      $("#javaimage").show();
       $("#cssimage, #csharpimage, #quiz").hide();
     } else {
-      $("#csharpimage, #home").show();
+      $("#csharpimage").show();
       $("#javaimage, #cssimage, #quiz").hide();
     }
   });
