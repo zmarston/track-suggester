@@ -8,14 +8,19 @@ $(document).ready(function(){
     var q5 = $("#q5").val();
 
     if (q1 === "css" && q5 === "css" || q1 === "css" && q2 === "css" || q5 === "css" && q2 === "css" || q5 === "css" && q3 === "css"){
-      $("#cssimage").show();
+      $("#cssimage, #home").show();
       $("#javaimage, #csharpimage, #quiz").hide();
     } else if (q1 === "java" && q5 === "java" || q1 === "java" && q3 === "java" || q5 === "java" && q2 === "java" || q5 === "java" && q3 === "java"){
-      $("#javaimage").show();
+      $("#javaimage, #home").show();
       $("#cssimage, #csharpimage, #quiz").hide();
     } else {
-      $("#csharpimage").show();
+      $("#csharpimage, #home").show();
       $("#javaimage, #cssimage, #quiz").hide();
     }
+  });
+  $("#home").click(function(event){
+    event.preventDefault();
+    $("#quiz").show();
+    $("#javaimage, #csharpimage, #cssimage").hide();
   });
 });

@@ -4,6 +4,9 @@ body{
 }
 img {
   display: none;
+  width: 630px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .form-control {
   width: 630px;
@@ -20,10 +23,14 @@ h5 {
   margin-top: 20px;
 }
 .btn {
+  cursor: pointer;
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
+}
+select {
+  cursor: pointer;
 }
 form {
   border: solid;
@@ -32,4 +39,7 @@ form {
   padding: 50px;
   background-color: #006666;
   margin: 50px;
+}
+#cssimage {
+  border-radius: 100px;
 }
