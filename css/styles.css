@@ -7,6 +7,7 @@ img {
   width: 630px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 50px;
 }
 .form-control {
   width: 630px;
@@ -42,4 +43,21 @@ form {
 }
 #cssimage {
   border-radius: 100px;
+}
+.top {
+  text-align: center;
+  background-color: #99ccff;
+}
+h2 {
+  cursor: pointer;
+  color: blue;
+}
+h2:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+.col-md-3 {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
