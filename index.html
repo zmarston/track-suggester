@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <meta charset="utf-8">
     <title>Track Suggester</title>
   </head>
@@ -26,37 +27,41 @@
       </div>
       <form id="quiz">
         <h1>Track Suggester</h1>
+        <div class="form-group">
+          <input id="name" class="form-control" type="text" placeholder="Name">
+          <div class="invalid-feedback">Please provide a name.</div>
+        </div>
         <h5>What do you like most?</h5>
-      <select class="form-control" id="q1">
-        <option value="css">Design</option>
-        <option value="java">Android Applications</option>
-        <option value="c">Microsoft</option>
-      </select>
-      <h5>What kind of company would you like to work at?</h5>
-      <select class="form-control" id="q2">
-        <option value="c">A large and established company.</option>
-        <option value="java">An enterprise-level company.</option>
-        <option value="css">For myself or as a front-end developer.</option>
-      </select>
-      <h5>What do you like about development?</h5>
-      <select class="form-control" id="q3">
-        <option value="css">Creating good looking designs.</option>
-        <option value="java">Creating high-performance applications.</option>
-        <option value="c">Building internal software.</option>
-      </select>
-      <h5>What do you want to learn?</h5>
-      <select class="form-control" id="q4">
-        <option value="java">How to use a popular programming language often used for android applications.</option>
-        <option value="css">How to make an awesome looking website.</option>
-        <option value="c">How to use the most popular language among established companies.</option>
-      </select>
-      <h5>What interests you most?</h5>
-      <select class="form-control" id="q5">
-        <option value="css">CSS</option>
-        <option value="c">C#</option>
-        <option value="java">Java</option>
-      </select>
-      <button type="submit" id="submit" class="btn btn-primary">SUBMIT</button>
+        <select class="form-control" id="q1">
+          <option value="css">Design</option>
+          <option value="java">Android Applications</option>
+          <option value="c">Microsoft</option>
+        </select>
+        <h5>What kind of company would you like to work at?</h5>
+        <select class="form-control" id="q2">
+          <option value="c">A large and established company.</option>
+          <option value="java">An enterprise-level company.</option>
+          <option value="css">For myself or as a front-end developer.</option>
+        </select>
+        <h5>What do you like about development?</h5>
+        <select class="form-control" id="q3">
+          <option value="css">Creating good looking designs.</option>
+          <option value="java">Creating high-performance applications.</option>
+          <option value="c">Building internal software.</option>
+        </select>
+        <h5>What do you want to learn?</h5>
+        <select class="form-control" id="q4">
+          <option value="java">How to use a popular programming language often used for android applications.</option>
+          <option value="css">How to make an awesome looking website.</option>
+          <option value="c">How to use the most popular language among established companies.</option>
+        </select>
+        <h5>What interests you most?</h5>
+        <select class="form-control" id="q5">
+          <option value="css">CSS</option>
+          <option value="c">C#</option>
+          <option value="java">Java</option>
+        </select>
+        <button type="submit" id="submit" class="btn btn-primary">SUBMIT</button>
       </form>
       <div class="csharp">
         <img src="img/csharp.png" id="csharpimage" alt="C#">

@@ -6,21 +6,27 @@ $(document).ready(function(){
     var q3 = $("#q3").val();
     var q4 = $("#q4").val();
     var q5 = $("#q5").val();
+    var name = $("#name").val();
 
-    if (q1 === "css" && q5 === "css" || q1 === "css" && q2 === "css" || q5 === "css" && q2 === "css" || q5 === "css" && q3 === "css"){
-      $("#cssimage").show();
+    if (name === ""){
+      $("input#name").addClass("is-invalid");
+      $(".invalid-feedback").show();
+    } else if (q1 === "css" && q5 === "css" || q1 === "css" && q2 === "css" || q5 === "css" && q2 === "css" || q5 === "css" && q3 === "css"){
+      $("#cssimage").fadeIn(2000);
       $("#javaimage, #csharpimage, #quiz").hide();
     } else if (q1 === "java" && q5 === "java" || q1 === "java" && q3 === "java" || q5 === "java" && q2 === "java" || q5 === "java" && q3 === "java"){
-      $("#javaimage").show();
+      $("#javaimage").fadeIn(2000);
       $("#cssimage, #csharpimage, #quiz").hide();
     } else {
-      $("#csharpimage").show();
+      $("#csharpimage").fadeIn(2000);
       $("#javaimage, #cssimage, #quiz").hide();
     }
+
+
   });
   $("#home").click(function(event){
     event.preventDefault();
-    $("#quiz").show();
+    $("#quiz").fadeIn(1000);
     $("#javaimage, #csharpimage, #cssimage").hide();
   });
 });

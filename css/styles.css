@@ -1,6 +1,7 @@
 
 body{
   background-color: #009999;
+  font-family: 'Noto Serif', serif;
 }
 img {
   display: none;
@@ -17,6 +18,8 @@ img {
 }
 h1 {
   text-align: center;
+  color: darkred;
+  font-weight: bold;
 }
 h5 {
   margin-left: 150px;
@@ -67,4 +70,7 @@ h2:hover {
   border-right-width: 4px;
   border-left-width: 4px;
   margin-top: -4px;
+}
+.invalid-feedback {
+  margin-left: 135px;
 }
